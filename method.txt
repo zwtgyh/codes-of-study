@@ -4,8 +4,9 @@ git add .
 
 git commit -m "first commit"  £¨ÎÄ¼şÃèÊö£©
 
-git remote add origin https://github.com/zwtgyh/codes-of-study.git
+git remote add origin https://github.com/zwtgyh/codes-of-study.git ï¼ˆå¯ä»¥çœç•¥ï¼‰
 
 git push -u origin master
+
 
 
