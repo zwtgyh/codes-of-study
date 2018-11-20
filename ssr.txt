@@ -1,0 +1,4 @@
+wget -N --no-check-certificate https://makeai.cn/bash/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+
+
+bash ssrmu.sh
