@@ -1,0 +1,25 @@
+﻿<?php
+ $con=mysqli_connect("localhost:3306","root","zhangwentao123");
+ if (!mysqli_select_db($con,"wjk"))
+  { echo "连接wjk数据库出错";
+    exit;
+  }
+else echo "连接wjk数据库成功\n";
+mysqli_query($con,"set names utf8");
+?>
+<html>
+<head>
+<br /><br /><br /><br /><br /><br /><br />
+<p><title>查看快递信息</title>
+</head>
+<body bgcolor="white" text="black" vlink="blue">
+ <h1 align="center">查看快递信息</h1><br /><br /><br /><br /><br /><br /><br /><br />
+ <form name="seekS" method="post" action="seekS.php" align="center">
+ 快&nbsp&nbsp递&nbsp&nbsp单&nbsp&nbsp号:<input type="text" name="快递单号"><br><br /><br />
+ <input type="submit" value="提交">
+ </form>
+</body>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<h2 align="right"><a href="index.php">返回首页</a></h2>
+<h2 align="right"><a href="map.html">详细地址</a></h2>
+</html>

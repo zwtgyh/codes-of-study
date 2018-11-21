@@ -1,0 +1,21 @@
+﻿<?php
+ $con=mysqli_connect("localhost:3306","root","zhangwentao123");
+ if (!mysqli_select_db($con,"wjk"))
+  { echo "连接wjk数据库出错";
+    exit;
+   }
+else echo"连接wjk数据库成功\n";
+mysqli_query($con,"set names utf8");
+?>
+<html>
+<head>
+<title>删除快递信息</title>
+</head>
+<body>
+   <h3>删除快递信息</h3>
+   <form name="seekS" method="post" action="deleteS.php">
+   快递 &nbsp &nbsp&nbsp 单号: <input type="text" name="快递单号"><br>
+   <input type="submit" value="提交">
+   </form>
+</body>
+</html>

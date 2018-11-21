@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>管理员</title>
+    <script type="text/javascript">
+      function check_data()
+      {
+        if (document.myForm.account.value.length == 0)
+          alert("错误！账号不可为空");
+        else if (document.myForm.password.value.length == 0)
+          alert("错误！密码不可为空");
+        else 
+          myForm.submit();
+      }
+    </script>
+  </head>
+  <body bgcolor="white" text="black" vlink="blue">
+    <p align="center"><img src="car.jpeg" width="400" hight="390">
+    <form action="checkpwd2.php" method="post" name="myForm">
+      <table width="40%" align="center">
+        <tr> 
+          <td align="center"> 
+            <font color="#3333FF" size="5">账号：</font> 
+            <input name="account" type="text" size="15">
+          </td>
+        </tr>
+        <tr> 
+          <td align="center"> 
+            <font color="#3333FF" size="5">密码：</font> 
+            <input name="password" type="password" size="15">
+          </td>
+        </tr><br /><br /><br /><br /><br /><br />
+        <tr>
+          <td align="center"> 
+            <input type="button" value="登录" onClick="check_data()">      　 
+            <input type="reset" value="重填">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<h2 align="right"><a href="index.php">返回首页</a></h2>
+</html>

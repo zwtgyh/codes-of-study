@@ -1,0 +1,25 @@
+﻿<?php
+ $con=mysqli_connect("localhost:3306","root","zhangwentao123");
+ if (!mysqli_select_db($con,"wjk"))
+  { echo "连接wjk数据库出错";
+    exit;
+  }
+else echo "连接wjk数据库成功\n"
+mysqli_query($con,"set names utf8");
+?>
+<html>
+<head>
+<title>添加学生信息</title>
+</head>
+<body>
+<h3>添加学生信息</h3>
+<form name="insertS" method="post" action="insertS.php">
+学 &nbsp &nbsp&nbsp 号:<input type="text" name="学号"><br>
+姓 &nbsp &nbsp&nbsp 名:<input type="text" name="姓名"><br>
+性 &nbsp &nbsp&nbsp 别:<input type="text" name="性别"><br>
+出生年月: <input type="text" name="出生年月"><br>
+院 &nbsp &nbsp&nbsp 系:<input type="text" name="院系"><br>
+<input type="submit" value="提交">
+</form>
+</body>
+</html>
